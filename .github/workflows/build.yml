@@ -17,7 +17,7 @@ jobs:
       run: sudo apt-get install -y g++
 
     - name: Compile the code
-      run: g++ -o TicTacToe main.cpp
+      run: g++ -o TicTacToe Xcircle.cpp
 
     - name: Run the program
       run: ./TicTacToe
