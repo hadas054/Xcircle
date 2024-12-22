@@ -7,17 +7,17 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
 
     - name: Install dependencies
-      run: sudo apt-get install -y g++
+      run: choco install mingw
 
     - name: Compile the code
       run: g++ -o TicTacToe Xcircle.cpp
 
     - name: Run the program
-      run: ./TicTacToe
+      run: TicTacToe.exe
