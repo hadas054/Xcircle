@@ -19,6 +19,8 @@ jobs:
     - name: Compile the code
       run: g++ -o TicTacToe Xcircle/Xcircle.cpp
 
+    - name: List files
+      run: dir
 
     - name: Run the program
-      run: TicTacToe.exe
+      run: ./TicTacToe.exe
